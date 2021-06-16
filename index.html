@@ -1,1 +1,232 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamar Palmer</title>
+
+    <!-- CSS internal intially but migrated later-->
+    <style>
+    ul{
+        list-style-type: none;
+        background-color: #f3f3f3;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 1px solid #e7e7e7;
+    }
+    li {
+        float: left;
+    }
+    li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active {
+  color: white;
+  background-color: #04AA6D;
+}
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.mySlides {display: none;}
+      </style>
+</head>
+<body>
+    <header></header>
+    <nav>
+        <!--github and linkedin icon
+        page navigation-->
+        <ul>
+            <li><a style="background-color: #04AA6D; color:white"><b>J. Palmer</b></a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="intro">
+        <h1>Hey!</h1>
+        <h2><i>I'm</i> <b>Jamar Palmer</b></h2>
+        <p>I am a Temple University student, focused on improving my expertise every single day. After earning numerous tech certifications, I've found programming to be the most
+            enjoyable. New fascinating technologies emerge constantly and implementing them into my projects provides both challenge and satisfaction. 
+        </br>
+        I love stimulating myself with new activities constantly as an open perspective is very beneficial in development as well as any other situation. My hobbies include 
+        bass guitar practice, Spanish improvement, exercising, cooking (poorly), and watching sports/anime/romantic comedies featuring Adam Sandler.  
+        </p>
+        <img src="me.jpg" alt="Jamar Palmer"  width="450" height="600">
+        <!--carousel or equivalent of skills and languages-->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+            
+              <img src="js.jpg" height="260">
+            
+            </div>
+            
+            <div class="mySlides fade">
+            
+              <img src="aspnet.jpg" height="260">
+            
+            </div>
+            
+            <div class="mySlides fade">
+            
+              <img src="java.jpg" height="260">
+            
+            </div>
+            
+            </div>
+
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+
+
+     
+    </div>
+    <div id="education">
+
+        <h2>Education</h2>
+        <!--Carousel of courses fading in and out-->
+        <h3>Temple University</h3>
+        <h4>B.S. Information Sciences and Technology</h4>
+        <div><!--carousel of courses--></div>
+        <p>Temple University's College of Science and Technology does a fantastic job at providing opportunities to foucs on the concentration of your choosing. I was able to 
+            get strong infrastructure knowledge while advancing my programming skills. 
+        </p>
+        <h3>Certifications</h3>
+        <p>CompTIA certifications are excellent tests to validate one's expertise in a field. The A+ focuses on gaining the problem solving mentality that is imperative for every IT
+            professional. The Network+ covers cloud and networking technologies and maintenance. The Security+ covers policies and practices along with vulnerablility assessment and 
+            penetration testing.
+        </p>
+        <img src="a.png" alt="A+">
+        <img src="net.png" alt="Net+">
+        <img src="sec.png" alt="Sec+">
+        
+    </div>
+    <div id="experience">
+
+        <h2>Experience</h2>
+        <h3>Software Engineer Intern</h3>
+        <h3><i>United States Liability Insurance</i></h3>
+        <p>This company allows for interns to branch out and gain experience equal to that of a full-time position. What started as writing simple scripts and improving documentation
+            evolved into application development once I was acclimated. Using C# and JavaScript, we created new forms and additions to the intranet while unit testing for safe 
+            integration. The automation of some tasks using Python in conjunction with Azure, proved to be beneficial self-study.
+        </p>
+        <h3>Retail Store Associate</h3>
+        <h3><i>CVS Pharmacy</i></h3>
+        <p>I believe that all people should work a retail/customer-oriented job for a brief period and I got this experience with CVS. The social skills that are obtained through
+            constant interaction is invaluable and networking can be surprisingly fruitful. Small management roles allowed me to gain leadership experience and time management was 
+            crucial for completing the daily duties.
+        </p>
+    </div>
+    <div id="projects">
+
+        <h2>Projects</h2>
+        <h3>Hoot Hoot</h3>
+        <p>Hoot Hoot is a web application, exclusive to Temple University students, allowing them to register using their student IDs and browse available courses. They can give 
+            feedback through comments and register for courses, while the administrators manage the collection of courses to ensure they are updated. Using C# and ASP.NET, I designed
+            the web forms and postback behavior. SOAP web services were used to create accounts and RESTful APIs were used for course registration. All information was stored in a 
+            database which had predefined stored procedures through Microsoft Transact-SQL. Finally, Bootstrap facilitated the design and AJAX improved UX.
+        </p>
+        <h3>Capstone Project</h3>
+        <p>This is a team based project, covering all phases of the SDLC through systems analysis. We build a user interface using Microsoft Power BI for the Temple University 
+            Harrisburg branch, allowing them to quickly gather data on Continuing Education students. Various models were built such as use case diagrams and traceability matrices
+            to ensure that the project was aligned from start to finish. 
+        </p>
+    </div>
+    <div id="contact">
+
+        <h2>Contact Me</h2>
+        <!--email and expanded git/linkedin links-->
+        <a href="https://www.linkedin.com/in/jamar-palmer-47102410a/">LinkedIn</a>
+        <a href="https://github.com/jamar-palmer">GitHub</a>
+        <p>jchunksy@yahoo.com</p>
+    </div>
+    <footer>
+        <p>Jamar Palmer</p>
+     
+    </footer>
+
+
+    <script>
+        var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+    </script>
+</body>
+
+</html>
