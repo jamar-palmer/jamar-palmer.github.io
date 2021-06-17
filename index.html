@@ -7,6 +7,16 @@
 
     <!-- CSS internal intially but migrated later-->
     <style>
+      body{
+        margin-bottom: 4rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+
+   
+        font-family: Bahnschrift SemiBold;
+        background-color: #fcfbdb;
+
+      }
     ul{
         list-style-type: none;
         background-color: #f3f3f3;
@@ -16,7 +26,7 @@
         border: 1px solid #e7e7e7;
     }
     li {
-        float: left;
+        float:left;
     }
     li a {
     display: block;
@@ -35,8 +45,24 @@ li a.active {
   background-color: #04AA6D;
 }
 
+.introText{
+  float:left;
+}
+.introExtra{
+  float:right;
+}
+.navLinks{
+  float:right;
+  padding-right: 1rem;
+  padding: 0.5rem;
+}
 
-
+.contactLinks{
+  color:white;
+}
+a.contactLinks:hover{
+  font-size:150%;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -86,7 +112,6 @@ li a.active {
       </style>
 </head>
 <body>
-    <header></header>
     <nav>
         <!--github and linkedin icon
         page navigation-->
@@ -96,9 +121,13 @@ li a.active {
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+            <a href="https://www.linkedin.com/in/jamar-palmer-47102410a/"><img class="navLinks" src="linkedin.png" alt="LinkedIn" height="35" width="35"></a>
+            <a href="https://github.com/jamar-palmer"><img class="navLinks" src="git.png" alt="GitHub" height="35" width="35"></a>
         </ul>
+
     </nav>
     <div id="intro">
+      <div class="introText">
         <h1>Hey!</h1>
         <h2><i>I'm</i> <b>Jamar Palmer</b></h2>
         <p>I am a Temple University student, focused on improving my expertise every single day. After earning numerous tech certifications, I've found programming to be the most
@@ -107,25 +136,27 @@ li a.active {
         I love stimulating myself with new activities constantly as an open perspective is very beneficial in development as well as any other situation. My hobbies include 
         bass guitar practice, Spanish improvement, exercising, cooking (poorly), and watching sports/anime/romantic comedies featuring Adam Sandler.  
         </p>
+      </div>
+      <div class="introExtra">
         <img src="me.jpg" alt="Jamar Palmer"  width="450" height="600">
         <!--carousel or equivalent of skills and languages-->
         <div class="slideshow-container">
 
             <div class="mySlides fade">
             
-              <img src="js.jpg" height="260">
+              <img src="js.jpg" height="260" width="450">
             
             </div>
             
             <div class="mySlides fade">
             
-              <img src="aspnet.jpg" height="260">
+              <img src="aspnet.jpg" height="260" width="450">
             
             </div>
             
             <div class="mySlides fade">
             
-              <img src="java.jpg" height="260">
+              <img src="java.jpg" height="260" width="450">
             
             </div>
             
@@ -140,6 +171,7 @@ li a.active {
 
      
     </div>
+  </div>
     <div id="education">
 
         <h2>Education</h2>
@@ -155,7 +187,7 @@ li a.active {
             professional. The Network+ covers cloud and networking technologies and maintenance. The Security+ covers policies and practices along with vulnerablility assessment and 
             penetration testing.
         </p>
-        <img src="a.png" alt="A+">
+        <img src="aplus.png" alt="A+">
         <img src="net.png" alt="Net+">
         <img src="sec.png" alt="Sec+">
         
@@ -191,16 +223,18 @@ li a.active {
             to ensure that the project was aligned from start to finish. 
         </p>
     </div>
-    <div id="contact">
-
+    <div id="contact" style="text-align: center; background-color:crimson; color:white">
+<br>
         <h2>Contact Me</h2>
         <!--email and expanded git/linkedin links-->
-        <a href="https://www.linkedin.com/in/jamar-palmer-47102410a/">LinkedIn</a>
-        <a href="https://github.com/jamar-palmer">GitHub</a>
+        <a class="contactLinks" href="https://www.linkedin.com/in/jamar-palmer-47102410a/">LinkedIn</a>
+        <a class="contactLinks" href="https://github.com/jamar-palmer">GitHub</a>
         <p>jchunksy@yahoo.com</p>
+        <br>
     </div>
-    <footer>
-        <p>Jamar Palmer</p>
+    <br>
+    <footer style="text-align: center;">
+        <h2><i>Jamar Palmer</i></h2>
      
     </footer>
 
